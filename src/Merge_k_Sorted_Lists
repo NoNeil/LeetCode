@@ -18,7 +18,7 @@ public:
         if(lists.empty())   return NULL;
         ListNode *head = NULL, *p, *q;
         make_heap(lists.begin(), lists.end(), cmp);
-        
+         
         while(lists.front() != NULL){
             if(head == NULL){
                 head = lists.front();
@@ -35,7 +35,7 @@ public:
         }
         return head;
     }
-    
+     
     static bool cmp(const ListNode *a, const ListNode *b)
     {
         if(a != NULL && b != NULL)  return a->val > b->val;
